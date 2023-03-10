@@ -1,3 +1,14 @@
+-- create database called crowdfunding_db
+CREATE DATABASE crowdfunding_db
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'C'
+    LC_CTYPE = 'C'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
 -- create Category table
 CREATE TABLE Category(
 	category_id VARCHAR(4) PRIMARY KEY,
