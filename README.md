@@ -16,6 +16,7 @@ This mini project is to build up an ETL (extract, transform and load) pipeline. 
 
 
 This dataset contains two excel table (crowdfunding and contacts) and customer conatact were stored as a json format. </br>
+
 The data cleaning and transformating starts with creating cateogry and subcategory dataframe. The unqiue items in category and subcategoy in raw data is identified and labelled with an unique primary key. The category and subcategory dataframe is then merge with the campaign dataframe to match with category id and subcategory id. To transfom the json format data into the database, both python dictionary or regular expressions method can be utilised.</br>
 
 The four transformed table will be created in PostregSQL according to the entity relationship diagram showed below and loaded into the database.</br>
