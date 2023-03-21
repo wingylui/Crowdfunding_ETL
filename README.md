@@ -19,7 +19,7 @@ This dataset contains two excel table (crowdfunding and contacts) and customer c
 
 The data cleaning and transformating starts with creating cateogry and subcategory dataframe. The unqiue items in category and subcategoy in raw data is identified and labelled with an unique primary key. The category and subcategory dataframe is then merge with the campaign dataframe to match with category id and subcategory id. To transfom the json format data into the database, both python dictionary or regular expressions method can be utilised.</br>
 
-The four transformed table will be created in PostregSQL according to the entity relationship diagram showed below and loaded into the database.</br>
+The four cleaned tables will be created in PostregSQL according to the entity relationship diagram showed below and loaded into the database.</br>
 
 <b>Entity Relationship Diagram:</b></br>
 ![ERD](https://github.com/wingylui/Crowdfunding_ETL/blob/main/Entity_relationship_Diagram/Entity_Relationship_Diagram_for_CrowdfundingETL.png)</br>
