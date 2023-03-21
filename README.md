@@ -13,8 +13,15 @@ This mini project is to build up an ETL (extract, transform and load) pipeline. 
 <b>Package used:</b> Pandas, numpy, datetime and json </br>
 <b>Dataset:</b> [Contacts](https://github.com/wingylui/Crowdfunding_ETL/blob/main/Resources/contacts.xlsx), [Crowdfunding](https://github.com/wingylui/Crowdfunding_ETL/blob/main/Resources/crowdfunding.xlsx) </br>
 <b>Main Script:</b> [Data cleaning and transformation](https://github.com/wingylui/Crowdfunding_ETL/blob/main/ETL_Mini_Project_WYLui.ipynb), [Create a table schema](https://github.com/wingylui/Crowdfunding_ETL/blob/main/crowdfunding_db_schema.sql)</br>
+
+
+This dataset contains two excel table (crowdfunding and contacts) and customer conatact were stored as a json format. </br>
+The data cleaning and transformating starts with creating cateogry and subcategory dataframe. The unqiue items in category and subcategoy in raw data is identified and labelled with an unique primary key. The category and subcategory dataframe is then merge with the campaign dataframe to match with category id and subcategory id. To transfom the json format data into the database, both python dictionary or regular expressions method can be utilised.</br>
+
+The four transformed table will be created in PostregSQL according to the entity relationship diagram showed below and loaded into the database.</br>
+
 <b>Entity Relationship Diagram:</b></br>
-![ERD](https://github.com/wingylui/Crowdfunding_ETL/blob/main/Entity_elationship_Diagram/Entity_Relationship_Diagram_for_CrowdfundingETL.png)</br>
+![ERD](https://github.com/wingylui/Crowdfunding_ETL/blob/main/Entity_relationship_Diagram/Entity_Relationship_Diagram_for_CrowdfundingETL.png)</br>
 
 
 ---
